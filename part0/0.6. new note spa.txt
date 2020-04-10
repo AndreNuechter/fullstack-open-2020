@@ -1,0 +1,15 @@
+title new note spa
+
+note right of browser
+Site rendered as depicted in 0.5
+end note
+
+note over browser:
+user enters text for a new note and submits the form.
+submit-handler on form adds new note to array, 
+empties form field, redraws notes list and 
+posts new note to the server.
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa {"content":"note_content","date":"2020-04-05T13:14:24.370Z"}
+server-->browser: Status Code 201 Created {"message":"note created"}
