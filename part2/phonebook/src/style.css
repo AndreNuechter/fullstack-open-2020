@@ -1,0 +1,21 @@
+body {
+    margin: 40px 16px;
+}
+
+.toast {
+    padding: 8px 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.error {
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.success {
+    border: 1px solid green;
+    background: rgba(0, 255, 0, 0.4);
+}
